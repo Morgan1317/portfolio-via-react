@@ -5,23 +5,22 @@
   --tertiary-color: #dcd7d7;
   --fourth-color: #3d3d3d;
   --fifth-color: rgb(228, 78, 103); 
-  background-color: var(--tertiary-color);
+  
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body{
   color: var(--primary-color);
-  background-color: (--tertiary-color);
+  
   font-family: Arial, Helvetica, sans-serif;
 }
-html{
-  background-color: var(--tertiary-color);
-}
+
 
 /* header styling starts */
 header{
@@ -86,8 +85,13 @@ ul{
 }
 
 .aboutMe{
-  background-color: var(--tertiary-color);
+  
   padding: 25px;
+}
+.form-div{
+  
+  margin: 30px;
+  
 }
 
 
@@ -98,9 +102,7 @@ ul{
 
 /*Styling for main content begins */
 
-.info {
-  background: var(--tertiary-color);
-}
+
 
 .flex-row {
   display: flex;
@@ -108,7 +110,7 @@ ul{
   align-items: center;
   flex: 10px;
   padding: 20px;
-  background: var(--tertiary-color);
+ 
   
 }
 
@@ -142,7 +144,7 @@ ul{
   color: var(--fifth-color)
 }
 .project{
-  background: var(--tertiary-color);
+ 
   display: grid;    
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 5vw);
@@ -153,9 +155,9 @@ ul{
   color: var(--fourth-color);
   flex:1 70%;
   padding-left: 20px;
-  border-left: solid 3px var(--fourth-color);
+ 
   padding-right: 20px;
-  background-color: var(--tertiary-color);
+  
 
 }
 

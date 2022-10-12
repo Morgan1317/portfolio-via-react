@@ -1,9 +1,10 @@
 import React from 'react';
+import pdf from '../../assets/Morgan_Holcomb_Resume.pdf';
 
 function Resume() {
     return (
         <div>
-            <a href="./assets/Morgan_Holcomb_Resume.pdf" id="resume" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href={pdf}>Click here for my pdf</a>
         </div>
     )
 }

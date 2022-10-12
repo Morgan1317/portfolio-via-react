@@ -5,14 +5,15 @@ const Modal = ({ onClose, currentProject }) => {
   const { title, languages, github, deploy, i } = currentProject;
 
   return (
-    <div className="modalBackdrop">
-      <div className="modalContainer">
-        <h3 className="modalTitle">{title} </h3>
+    <div >
+      <div >
+        <h3 className=" text-center">{title} </h3>
         <img
         src={require(`../../assets/images/${i}.jpg`).default}
           alt={title}
+          className='center'
         />
-              <p>{languages}</p>
+              <p className='text-center'>{languages}</p>
               <span><a
             href={github}
             target="_blank"
@@ -27,8 +28,8 @@ const Modal = ({ onClose, currentProject }) => {
           >
             Deployed App
           </a>
-        <button type="button" onClick={onClose}>
-          Close this modal
+        <button className='btn' type="button" onClick={onClose}>
+          X
         </button>
       </div>
     </div>
