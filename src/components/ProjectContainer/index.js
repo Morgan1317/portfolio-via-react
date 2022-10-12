@@ -7,6 +7,7 @@ import Resume from '../Resume';
 
 
 
+
 export default function ProjectContainer() {
     const [currentPage, setCurrentPage] = useState('About');
   
@@ -28,9 +29,9 @@ export default function ProjectContainer() {
   
     return (
       <div>
-        {/* // TODO: Add a comment describing what we are passing as props */}
+        
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-        {/* // TODO: Add a comment explaining what is happening on the following line */}
+        
         {renderPage()}
       </div>
     );

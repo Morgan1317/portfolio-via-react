@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
 
-const ProjectList = ({ category }) => {
+const ProjectList = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState();
 
@@ -9,13 +9,12 @@ const ProjectList = ({ category }) => {
     {
         title: 'Recipe Box',
         languages: ['Javascript','CSS','HTML'],
-        github: 'https://github.com/AHudg/recipe-box',
-        deploy:'https://ahudg.github.io/recipe-box/'
+        github: "https://github.com/AHudg/recipe-box",
+        deploy:"https://ahudg.github.io/recipe-box"
     },
 
   ]);
 
-  const currentProjects = project.filter(Project => Project.category === category);
 
   const toggleModal = (project, i) => {
     setCurrentProject({ ...project, index: i });
@@ -28,9 +27,9 @@ const ProjectList = ({ category }) => {
         <Modal onClose={toggleModal} currentProject={currentProject} />
       )}
       <div className="flex-row">
-        {currentProjects.map((project, i) => (
+        {project.map((project, i) => (
           <img
-            src={require(`../../assets/images/$${i}.jpg`).default}
+            src={require(`../../assets/images/${i}.jpg`).default}
             alt={project.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(project, i)}
