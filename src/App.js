@@ -1,24 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 
+import ProjectContainer from './components/ProjectContainer';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import About from './components/About';
-
 function App() {
   return (
-    <section>
-    <div className="App">
-      <Header></Header>
-    </div>
     <div>
-           <About></About>
-      <footer className='footer'>
-          <Footer></Footer>
+      <Header></Header>
+      <ProjectContainer></ProjectContainer>
+      <footer>
+        <Footer></Footer>
       </footer>
-      </div>
-      </section>
-  );
+    </div>
+  )
 }
 
 export default App;

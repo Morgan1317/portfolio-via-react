@@ -5,6 +5,7 @@
   --tertiary-color: #dcd7d7;
   --fourth-color: #3d3d3d;
   --fifth-color: rgb(228, 78, 103); 
+  background-color: var(--tertiary-color);
 }
 
 *{
@@ -65,7 +66,10 @@ ul{
 /* end header styling */
 
 /* styling for background image and portfolio image begins */
-
+.navigation{
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
 .initial {
 
 

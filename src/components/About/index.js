@@ -5,7 +5,7 @@ function About() {
     return (
         <section>
             <div className=" about row">
-                <img className=' float-md-start col-4' src={myImage} alt="Morgan Holcomb" />
+                <img className=' float-md-start col-3' src={myImage} alt="Morgan Holcomb" />
                 <div className="subtitle col row align-items-end">
                 <h2 className='justify-content-end text-center'>Full Stack Web Developer</h2>
                 </div>

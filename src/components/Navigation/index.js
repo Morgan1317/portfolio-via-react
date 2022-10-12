@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Nav(props) {
+function Nav({ currentPage, handlePageChange }) {
     
     return (
         <div>
@@ -8,16 +8,17 @@ function Nav(props) {
         <nav className='navigation'>
             <ul className='row'>
                 <li className='col-md-3'>
-                    <a className='link' href="#about-me">About Me</a>
+                        <a
+                            className={currentPage === 'Home' ? 'link active' : 'link'} href="#about-me" onClick={() => handlePageChange('About')}>About Me</a>
                 </li>
                 <li className='col-md-3'>
-                    <a className='link' href="#work">Portfolio</a>
+                    <a className={currentPage === 'Home' ? 'link active' : 'link'} href="#work" onClick={() => handlePageChange('Portfolio')}>Portfolio</a>
                 </li> 
                 <li className='col-md-3'>
-                    <a className='link' href="#contact-me">Contact Me</a>
+                    <a className={currentPage === 'Home' ? 'link active' : 'link'} href="#contact-me" onClick={() => handlePageChange('Contact')}>Contact Me</a>
                 </li>
                 <li className='col-md-3'>
-                    <a className='link' href="#resume">Resume</a>
+                    <a className={currentPage === 'Home' ? 'link active' : 'link'} href="#resume" onClick={() => handlePageChange('Resume')}>Resume</a>
                 </li>
             </ul>
         </nav>
