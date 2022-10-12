@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
 
+
 const ProjectList = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState();
@@ -17,7 +18,7 @@ const ProjectList = () => {
 
 
   const toggleModal = (project, i) => {
-    setCurrentProject({ ...project, index: i });
+    setCurrentProject({ ...project, i: i });
     setIsModalOpen(!isModalOpen);
   };
 
@@ -30,10 +31,10 @@ const ProjectList = () => {
         {project.map((project, i) => (
           <img
             src={require(`../../assets/images/${i}.jpg`).default}
-            alt={project.name}
+            alt={project.title}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(project, i)}
-            key={project.name}
+            key={project.title}
           />
         ))}
       </div>
