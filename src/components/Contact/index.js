@@ -42,23 +42,25 @@ function ContactForm() {
       <form className='row text-center form-div' id="contact-form" onSubmit={handleSubmit}>
       <h1 className='col-12 form-title' data-testid="h1tag" >Contact me</h1>
         <div className='col-12 form-title'>
-          <label className='col-12 col-sm-3 text-md-end' htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <label className='col-3 col-sm-6 text-center' htmlFor="name">Name:</label>
+          <input className='col-7' type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
         <div>
-          <label className='col-12 col-sm-3 text-md-end' htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <label className='col-3 col-sm-6 text-center' htmlFor="email">Email address:</label>
+          <input className='col-7' type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
         <div>
-          <label className='col-12 col-sm-3 text-md-end' htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <label className='col-3 col-sm-6 text-center' htmlFor="message">Message:</label>
+          <textarea className='col-7' name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button className='btn col-2' data-testid="button" type="submit">Submit</button>
+        <div>
+          <button className='btn col-2 align-self-center' data-testid="button" type="submit">Submit</button>
+        </div>
       </form>
     </section>
   );

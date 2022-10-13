@@ -56,6 +56,31 @@ header{
   width: 50%;
 }
 
+.btn {
+  color: black;
+  text-decoration: none;
+  margin: 10px; 
+  padding:10px;
+  width: 20%;
+  background-color: var(--primary-color);
+ 
+}
+
+.btn:hover{
+  color: black;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+
+}
+.link:active{
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+p{
+  display: inline-block;
+  padding: 20px
+}
+
 ul{
   list-style: none;
 }
@@ -84,9 +109,12 @@ ul{
 
 }
 
+.modal{
+  max-width: 650px;
+}
 .aboutMe{
-  
-  padding: 25px;
+  display: inline-block;
+  margin: 10px;
 }
 .form-div{
   
@@ -144,11 +172,7 @@ ul{
   color: var(--fifth-color)
 }
 .project{
- 
-  display: grid;    
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 5vw);
-  grid-gap: 15px;
+ padding: 25px;
 }
 
 .body{

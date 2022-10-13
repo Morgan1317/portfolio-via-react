@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
-import Image from '../../assets/images/0.jpg';
 
 
 
@@ -56,18 +55,18 @@ const ProjectList = () => {
   };
 
   return (
-    <div>
+    <div class='container'>
       {isModalOpen && (
         <Modal onClose={toggleModal} currentProject={currentProject} />
       )}
-      <div className="row text-center">
+      <div className="row text-center justify-content-center ">
         {project.map((project, i) => (
           <img
-            src={Image}
+            src={require(`../../assets/images/${i}.jpg`)}
             alt={project.title}
             onClick={() => toggleModal(project, i)}
             key={project.title}
-            className="col-12"
+            className=" col-7 my-5"
           />
         ))}
       </div>

@@ -6,7 +6,7 @@ function Nav({ currentPage, handlePageChange }) {
         <div>
        
         <nav className='navigation'>
-            <ul className='row'>
+            <ul className='row text-center'>
                 <li className='col-md-3'>
                         <a
                             className={currentPage === 'Home' ? 'link active' : 'link'} href="#about-me" onClick={() => handlePageChange('About')}>About Me</a>

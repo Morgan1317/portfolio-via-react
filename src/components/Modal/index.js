@@ -6,25 +6,27 @@ const Modal = ({ onClose, currentProject }) => {
 
   return (
     <div >
-      <div >
-        <h3 className=" text-center">{title} </h3>
+      <div className='row'>
+        <h3 className=" col-12 text-center">{title} </h3>
         <img
-        src={require(`../../assets/images/${i}.jpg`).default}
+        src={require(`../../assets/images/${i}.jpg`)}
           alt={title}
-          className='center'
+          className='center modal'
         />
-              <p className='text-center'>{languages}</p>
-              <span><a
+              <p className=' col-4 text-center'>Languages Used:{languages}</p>
+              <a
             href={github}
             target="_blank"
-            rel="noreferrer noopener"
-          >Github </a></span>
+          rel="noreferrer noopener"
+          className='col-4'
+          >Github </a>
             
          
           <a
             href={deploy}
             target="_blank"
-            rel="noreferrer noopener"
+          rel="noreferrer noopener"
+          className='col-4'
           >
             Deployed App
           </a>
