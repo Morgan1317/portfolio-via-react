@@ -14,12 +14,6 @@ const ProjectList = () => {
         github: "https://github.com/AHudg/recipe-box",
         deploy:"https://ahudg.github.io/recipe-box"
     },
-    {
-      title: 'The Middle Man',
-      languages: ['MERN Stack'],
-      github: "https://github.com/AHudg/plantasia",
-      deploy:"https://stark-ridge-51286.herokuapp.com/"
-    },
       {
         title: 'Gauge Your Coworker',
         languages: ['Javascript ','Handlebars ','CSS '],
@@ -51,6 +45,12 @@ const ProjectList = () => {
         github: "https://github.com/Morgan1317/lets-blog-CMS-style-C14",
         deploy:"https://desolate-fortress-54377.herokuapp.com/"
     }, 
+    {
+      title: 'The Middle Man',
+      languages: ['MERN Stack'],
+      github: "https://github.com/AHudg/plantasia",
+      deploy:"https://stark-ridge-51286.herokuapp.com/"
+    },
 
   ]);
 
